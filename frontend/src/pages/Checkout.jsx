@@ -132,7 +132,7 @@ export default function Checkout() {
                   className="form-input"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  placeholder="John Doe"
+                  placeholder=""
                   required
                 />
               </div>
@@ -144,7 +144,7 @@ export default function Checkout() {
                   className="form-input"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
-                  placeholder="123 Cyber St"
+                  placeholder=""
                   required
                 />
               </div>
@@ -157,7 +157,7 @@ export default function Checkout() {
                     className="form-input"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    placeholder="Neo City"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -168,7 +168,7 @@ export default function Checkout() {
                     className="form-input"
                     value={zipCode}
                     onChange={(e) => setZipCode(e.target.value)}
-                    placeholder="94016"
+                    placeholder=""
                     required
                   />
                 </div>
