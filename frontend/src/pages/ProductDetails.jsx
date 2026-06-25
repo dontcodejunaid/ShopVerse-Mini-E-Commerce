@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useToast } from '../context/ToastContext';
+import { useTheme } from '../context/ThemeContext';
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ export default function ProductDetails() {
   
   const { addToCart } = useCart();
   const { showToast } = useToast();
+  const { isDark } = useTheme();
 
   useEffect(() => {
     const fetchProductDetails = async () => {
@@ -124,7 +126,7 @@ export default function ProductDetails() {
             {/* Cart Operations */}
             {product.stock > 0 && (
               <div style={cartActionsStyle}>
-                <div style={quantitySelectorStyle}>
+                <div style={{ ...quantitySelectorStyle, background: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.03)', borderColor: 'var(--border-color)' }}>
                   <button style={qtyBtnStyle} onClick={() => handleQtyChange('dec')}>-</button>
                   <span style={qtyValStyle}>{quantity}</span>
                   <button style={qtyBtnStyle} onClick={() => handleQtyChange('inc')}>+</button>
@@ -145,7 +147,7 @@ export default function ProductDetails() {
                 <h3 style={specsTitleStyle}>Specifications</h3>
                 <div style={specsGridStyle}>
                   {Object.entries(product.specifications).map(([key, val]) => (
-                    <div key={key} style={specItemStyle}>
+                    <div key={key} style={{ ...specItemStyle, background: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.01)', borderColor: 'var(--border-color)' }}>
                       <span style={specKeyStyle}>{key}</span>
                       <span style={specValStyle}>{val}</span>
                     </div>
@@ -226,7 +228,7 @@ const categoryTagStyle = {
 const titleStyle = {
   fontSize: '2.2rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   lineHeight: '1.2',
 };
 
@@ -244,7 +246,7 @@ const starsStyle = {
 
 const ratingTextStyle = {
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const priceRowStyle = {
@@ -257,7 +259,7 @@ const priceRowStyle = {
 const priceStyle = {
   fontSize: '2rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const stockLabelStyle = {
@@ -266,7 +268,7 @@ const stockLabelStyle = {
 };
 
 const descriptionStyle = {
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontSize: '1rem',
   lineHeight: '1.6',
 };
@@ -290,7 +292,7 @@ const quantitySelectorStyle = {
 const qtyBtnStyle = {
   background: 'none',
   border: 'none',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   width: '36px',
   height: '36px',
   borderRadius: '8px',
@@ -324,7 +326,7 @@ const specsWrapperStyle = {
 const specsTitleStyle = {
   fontSize: '1.1rem',
   fontWeight: '700',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   marginBottom: '16px',
 };
 
@@ -346,14 +348,14 @@ const specItemStyle = {
 
 const specKeyStyle = {
   fontSize: '0.8rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontWeight: '500',
   textTransform: 'uppercase',
 };
 
 const specValStyle = {
   fontSize: '0.95rem',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   fontWeight: '600',
 };
 
