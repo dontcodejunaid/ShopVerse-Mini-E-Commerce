@@ -135,7 +135,7 @@ const detailsStyle = {
 const nameStyle = {
   fontSize: '1.05rem',
   fontWeight: '700',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   lineHeight: '1.4',
   /* Ellipsis for multiline */
   display: '-webkit-box',
@@ -153,7 +153,7 @@ const starsStyle = {
 
 const ratingValueStyle = {
   fontSize: '0.8rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   marginLeft: '4px',
   fontWeight: '500',
 };
@@ -169,7 +169,7 @@ const footerRowStyle = {
 const priceStyle = {
   fontSize: '1.2rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const addToCartBtnStyle = {
