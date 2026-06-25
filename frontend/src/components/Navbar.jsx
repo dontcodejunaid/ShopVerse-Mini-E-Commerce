@@ -58,6 +58,8 @@ export default function Navbar() {
             onClick={() => setIsCartOpen(true)}
             style={{
               ...cartButtonStyle,
+              background: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)',
+              border: isDark ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(0,0,0,0.08)',
               animation: animateCartIcon ? 'bounceCart 0.6s ease' : 'none',
             }}
           >
@@ -102,7 +104,7 @@ const logoStyle = {
   display: 'flex',
   alignItems: 'center',
   gap: '8px',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const logoImgStyle = {
@@ -121,7 +123,7 @@ const linksContainerStyle = {
 const navLinkStyle = {
   fontSize: '0.95rem',
   fontWeight: '500',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   transition: 'color 0.2s ease',
 };
 
@@ -135,8 +137,8 @@ const registerButtonStyle = {
 
 const greetingStyle = {
   fontSize: '0.9rem',
-  color: '#d1d5db',
-  borderLeft: '1px solid rgba(255,255,255,0.1)',
+  color: 'var(--text-primary)',
+  borderLeft: '1px solid var(--border-color)',
   paddingLeft: '16px',
 };
 

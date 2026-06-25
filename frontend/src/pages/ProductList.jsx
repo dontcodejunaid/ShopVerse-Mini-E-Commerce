@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
+import { useTheme } from '../context/ThemeContext';
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -7,6 +8,7 @@ export default function ProductList() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('All');
   const [sortBy, setSortBy] = useState('default');
+  const { isDark } = useTheme();
 
   const categories = ['All', 'Electronics', 'Wearables', 'Accessories', 'Home', 'Lifestyle', 'Apparel'];
 
@@ -77,7 +79,13 @@ export default function ProductList() {
       {/* Controls Bar */}
       <div style={controlsStyle} className="glass-panel">
         {/* Search */}
-        <div style={searchWrapperStyle}>
+        <div
+          style={{
+            ...searchWrapperStyle,
+            background: isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(0, 0, 0, 0.03)',
+            borderColor: isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)',
+          }}
+        >
           <span style={searchIconStyle}>🔍</span>
           <input
             type="text"
@@ -94,7 +102,11 @@ export default function ProductList() {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            style={sortSelectStyle}
+            style={{
+              ...sortSelectStyle,
+              background: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.03)',
+              borderColor: isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)',
+            }}
           >
             <option value="default">Featured</option>
             <option value="price-asc">Price: Low to High</option>
@@ -112,9 +124,9 @@ export default function ProductList() {
             onClick={() => setCategory(cat)}
             style={{
               ...tabButtonStyle,
-              backgroundColor: category === cat ? '#8b5cf6' : 'rgba(255, 255, 255, 0.03)',
-              borderColor: category === cat ? '#a78bfa' : 'rgba(255, 255, 255, 0.08)',
-              color: category === cat ? '#ffffff' : '#9ca3af',
+              backgroundColor: category === cat ? 'var(--primary)' : (isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(0, 0, 0, 0.03)'),
+              borderColor: category === cat ? 'var(--primary)' : (isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)'),
+              color: category === cat ? '#ffffff' : 'var(--text-muted)',
             }}
           >
             {cat}
@@ -197,15 +209,15 @@ const heroTitleStyle = {
   fontWeight: '800',
   lineHeight: '1.2',
   marginBottom: '12px',
-  color: '#ffffff',
-  background: 'linear-gradient(to right, #ffffff, #a78bfa)',
+  color: 'var(--text-primary)',
+  background: 'linear-gradient(to right, var(--text-primary), var(--primary))',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
 };
 
 const heroSubStyle = {
   fontSize: '1.1rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontWeight: '400',
 };
 
@@ -238,7 +250,7 @@ const searchInputStyle = {
   background: 'none',
   border: 'none',
   outline: 'none',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   padding: '12px 0',
   width: '100%',
   fontSize: '0.95rem',
@@ -252,7 +264,7 @@ const sortWrapperStyle = {
 
 const sortLabelStyle = {
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const sortSelectStyle = {
@@ -260,7 +272,7 @@ const sortSelectStyle = {
   border: '1px solid rgba(255, 255, 255, 0.08)',
   borderRadius: '10px',
   padding: '10px 16px',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   outline: 'none',
   fontSize: '0.9rem',
   cursor: 'pointer',
