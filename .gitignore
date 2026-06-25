@@ -8,7 +8,7 @@ frontend/node_modules/
 backend/.env
 
 # Local Database Files (optional, keep seeds but ignore dynamic db changes)
-# backend/data/db.json
+backend/data/db.json
 
 # Build Directories
 dist/
