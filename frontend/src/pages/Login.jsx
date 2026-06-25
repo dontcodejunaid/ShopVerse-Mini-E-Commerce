@@ -107,13 +107,13 @@ const cardStyle = {
 const titleStyle = {
   fontSize: '1.8rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   textAlign: 'center',
   marginBottom: '8px',
 };
 
 const subtitleStyle = {
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontSize: '0.95rem',
   textAlign: 'center',
   marginBottom: '28px',
@@ -148,7 +148,7 @@ const footerStyle = {
   marginTop: '24px',
   textAlign: 'center',
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const linkStyle = {

@@ -234,7 +234,7 @@ const containerStyle = {
 const pageTitleStyle = {
   fontSize: '2rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const layoutGridStyle = {
@@ -263,7 +263,7 @@ const formStyle = {
 const sectionTitleStyle = {
   fontSize: '1.25rem',
   fontWeight: '700',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   marginBottom: '20px',
 };
 
@@ -280,7 +280,7 @@ const itemsListStyle = {
   display: 'flex',
   flexDirection: 'column',
   gap: '16px',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+  borderBottom: '1px solid var(--border-color)',
   paddingBottom: '20px',
   marginBottom: '20px',
 };
@@ -306,19 +306,19 @@ const itemDetailsStyle = {
 const itemNameStyle = {
   fontSize: '0.9rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const itemQtyPriceStyle = {
   fontSize: '0.85rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   marginTop: '2px',
 };
 
 const itemTotalStyle = {
   fontWeight: '600',
   fontSize: '0.9rem',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const totalsBoxStyle = {
@@ -331,7 +331,7 @@ const totalRowStyle = {
   display: 'flex',
   justifyContent: 'space-between',
   fontSize: '0.95rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 // Success Confirmation Styles
@@ -370,18 +370,18 @@ const successIconStyle = {
 const successTitleStyle = {
   fontSize: '2rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const successSubtitleStyle = {
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   marginTop: '8px',
   fontSize: '1rem',
 };
 
 const orderSummaryBoxStyle = {
   background: 'rgba(255, 255, 255, 0.02)',
-  border: '1px solid rgba(255, 255, 255, 0.06)',
+  border: '1px solid var(--border-color)',
   borderRadius: '16px',
   padding: '20px',
   margin: '28px 0',
@@ -394,18 +394,18 @@ const orderSummaryBoxStyle = {
 
 const orderRefStyle = {
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const orderTotalStyle = {
   fontSize: '1rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const orderStatusStyle = {
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const statusBadgeStyle = {

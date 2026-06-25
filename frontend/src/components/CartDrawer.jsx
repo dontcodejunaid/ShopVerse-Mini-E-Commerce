@@ -119,13 +119,13 @@ const headerStyle = {
 const titleStyle = {
   fontSize: '1.25rem',
   fontWeight: '700',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const closeButtonStyle = {
   background: 'none',
   border: 'none',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontSize: '1.8rem',
   cursor: 'pointer',
   transition: 'color 0.2s ease',
@@ -179,7 +179,7 @@ const itemDetailsStyle = {
 const itemNameStyle = {
   fontSize: '0.95rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const itemPriceStyle = {
@@ -196,9 +196,9 @@ const quantityControlsStyle = {
 };
 
 const qtyBtnStyle = {
-  background: 'rgba(255, 255, 255, 0.06)',
-  border: '1px solid rgba(255, 255, 255, 0.08)',
-  color: '#ffffff',
+  background: 'var(--border-color)',
+  border: '1px solid var(--border-color)',
+  color: 'var(--text-primary)',
   width: '26px',
   height: '26px',
   borderRadius: '6px',
@@ -241,7 +241,7 @@ const subtotalRowStyle = {
   alignItems: 'center',
   fontSize: '1.05rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const subtotalValStyle = {

@@ -149,12 +149,12 @@ const profileInfoStyle = {
 const usernameStyle = {
   fontSize: '1.5rem',
   fontWeight: '800',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const emailStyle = {
   fontSize: '0.95rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
 
 const badgeStyle = {
@@ -177,7 +177,7 @@ const ordersSectionStyle = {
 const sectionTitleStyle = {
   fontSize: '1.25rem',
   fontWeight: '700',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const loadingStyle = {
@@ -229,13 +229,13 @@ const metaGroupStyle = {
 const metaLabelStyle = {
   fontSize: '0.75rem',
   fontWeight: '600',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   letterSpacing: '0.5px',
 };
 
 const metaValueStyle = {
   fontSize: '0.9rem',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   fontWeight: '500',
 };
 
@@ -286,19 +286,19 @@ const itemDetailsStyle = {
 const itemNameStyle = {
   fontSize: '0.95rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const itemQtyStyle = {
   fontSize: '0.85rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   marginTop: '2px',
 };
 
 const itemTotalStyle = {
   fontWeight: '600',
   fontSize: '0.95rem',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
 };
 
 const shippingDetailsBoxStyle = {
@@ -310,7 +310,7 @@ const shippingDetailsBoxStyle = {
 
 const shippingTitleStyle = {
   fontSize: '0.85rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
   fontWeight: '700',
   textTransform: 'uppercase',
   marginBottom: '10px',
@@ -319,11 +319,11 @@ const shippingTitleStyle = {
 const shippingNameStyle = {
   fontSize: '0.95rem',
   fontWeight: '600',
-  color: '#ffffff',
+  color: 'var(--text-primary)',
   marginBottom: '2px',
 };
 
 const shippingAddrStyle = {
   fontSize: '0.9rem',
-  color: '#9ca3af',
+  color: 'var(--text-muted)',
 };
