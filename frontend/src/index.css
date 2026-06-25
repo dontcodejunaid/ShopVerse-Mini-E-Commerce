@@ -36,6 +36,30 @@
   --transition-fast: all 0.15s ease;
 }
 
+body.light-mode {
+  --bg-color: #f8fafc;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --border-glow: rgba(139, 92, 246, 0.08);
+  
+  --primary: #7c3aed;
+  --primary-glow: rgba(124, 58, 237, 0.15);
+  --primary-hover: #6d28d9;
+  
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.06), 0 4px 6px rgba(15, 23, 42, 0.04);
+  --shadow-glow: 0 0 15px rgba(124, 58, 237, 0.08);
+}
+
+body.light-mode select option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

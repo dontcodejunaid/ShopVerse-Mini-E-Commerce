@@ -2,10 +2,12 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
+import { useTheme } from '../context/ThemeContext';
 
 export default function Navbar() {
   const { isAuthenticated, user, logout } = useAuth();
   const { itemCount, setIsCartOpen, animateCartIcon } = useCart();
+  const { theme, toggleTheme, isDark } = useTheme();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -37,6 +39,19 @@ export default function Navbar() {
               <Link to="/register" style={{ ...navLinkStyle, ...registerButtonStyle }}>Register</Link>
             </>
           )}
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            style={{
+              ...themeToggleButtonStyle,
+              background: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)',
+              border: isDark ? '1px solid rgba(255,255,255,0.08)' : '1px solid rgba(0,0,0,0.08)',
+            }}
+            title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          >
+            {isDark ? '☀️' : '🌙'}
+          </button>
 
           {/* Cart Icon */}
           <button
@@ -133,6 +148,20 @@ const logoutButtonStyle = {
   fontWeight: '500',
   cursor: 'pointer',
   padding: 0,
+};
+
+const themeToggleButtonStyle = {
+  background: 'rgba(255,255,255,0.05)',
+  border: '1px solid rgba(255,255,255,0.08)',
+  borderRadius: '12px',
+  width: '44px',
+  height: '44px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease',
+  fontSize: '1.1rem',
 };
 
 const cartButtonStyle = {

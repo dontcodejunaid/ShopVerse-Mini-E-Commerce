@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { ToastProvider } from './context/ToastContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import CartDrawer from './components/CartDrawer';
 import ToastContainer from './components/Toast';
@@ -64,13 +65,15 @@ function MainAppContent() {
 export default function App() {
   return (
     <Router>
-      <AuthProvider>
-        <CartProvider>
-          <ToastProvider>
-            <MainAppContent />
-          </ToastProvider>
-        </CartProvider>
-      </AuthProvider>
+      <ThemeProvider>
+        <AuthProvider>
+          <CartProvider>
+            <ToastProvider>
+              <MainAppContent />
+            </ToastProvider>
+          </CartProvider>
+        </AuthProvider>
+      </ThemeProvider>
     </Router>
   );
 }
