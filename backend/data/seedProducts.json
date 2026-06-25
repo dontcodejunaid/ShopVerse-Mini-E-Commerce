@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Quantum Buds Pro",
+    "description": "Next-generation wireless earbuds featuring active hybrid noise cancellation, high-fidelity audio, and up to 36 hours of battery life with the wireless charging case.",
+    "price": 12499.00,
+    "category": "Electronics",
+    "imageUrl": "/images/products/earbuds.jpg",
+    "rating": 4.8,
+    "stock": 25,
+    "specifications": {
+      "Brand": "AetherAudio",
+      "Battery Life": "Up to 36 hours (with case)",
+      "Connectivity": "Bluetooth 5.3",
+      "Water Resistance": "IPX7 Waterproof",
+      "Noise Cancelling": "Active Noise Cancelling (ANC)"
+    }
+  },
+  {
+    "name": "AeroGrip Gaming Mouse",
+    "description": "Ultra-lightweight ergonomic wireless gaming mouse with a 26K DPI optical sensor, optical switches, and zero-latency wireless connectivity.",
+    "price": 6699.00,
+    "category": "Electronics",
+    "imageUrl": "/images/products/mouse.jpg",
+    "rating": 4.6,
+    "stock": 40,
+    "specifications": {
+      "Brand": "ApexGear",
+      "Weight": "58 grams",
+      "Sensor": "Focus Pro 26K Optical",
+      "Battery Life": "Up to 80 hours",
+      "Buttons": "6 Programmable"
+    }
+  },
+  {
+    "name": "Nebula mechanical Keyboard",
+    "description": "75% layout premium mechanical keyboard with pre-lubed linear switches, hot-swappable sockets, double-shot PBT keycaps, and customizable RGB backlighting.",
+    "price": 10799.00,
+    "category": "Electronics",
+    "imageUrl": "/images/products/keyboard.jpg",
+    "rating": 4.9,
+    "stock": 15,
+    "specifications": {
+      "Brand": "ApexGear",
+      "Form Factor": "75% Compact Layout",
+      "Switch Type": "Pre-lubed Linear Yellow",
+      "Connectivity": "USB-C Wired",
+      "Keycaps": "Double-shot PBT Cherry Profile"
+    }
+  },
+  {
+    "name": "Horizon Smartwatch",
+    "description": "A sleek, premium smartwatch with an AMOLED always-on display, health diagnostics tracking, built-in GPS, and comprehensive athletic metrics.",
+    "price": 20799.00,
+    "category": "Wearables",
+    "imageUrl": "/images/products/smartwatch.jpg",
+    "rating": 4.7,
+    "stock": 18,
+    "specifications": {
+      "Brand": "AetherAudio",
+      "Display": "1.43-inch AMOLED Always-On",
+      "Battery Life": "Up to 7 days",
+      "Sensors": "Heart Rate, SpO2, Sleep, GPS",
+      "Material": "Titanium case, Silicone band"
+    }
+  },
+  {
+    "name": "Vanguard Leather Backpack",
+    "description": "Crafted from full-grain leather, this water-resistant backpack features a padded 16-inch laptop compartment, luggage pass-through, and hidden anti-theft pockets.",
+    "price": 7499.00,
+    "category": "Accessories",
+    "imageUrl": "/images/products/backpack.jpg",
+    "rating": 4.5,
+    "stock": 12,
+    "specifications": {
+      "Brand": "NomadCraft",
+      "Material": "Full-grain water-resistant leather",
+      "Laptop Pocket": "Fits up to 16-inch devices",
+      "Capacity": "22 Liters",
+      "Dimensions": "18\" x 12\" x 6\""
+    }
+  },
+  {
+    "name": "Lumina Smart Desk Lamp",
+    "description": "Minimalist LED desk lamp featuring touch-sensitive controls, adjustable color temperature, brightness slider, and an integrated 15W wireless charging base.",
+    "price": 4999.00,
+    "category": "Home",
+    "imageUrl": "/images/products/lamp.jpg",
+    "rating": 4.4,
+    "stock": 30,
+    "specifications": {
+      "Brand": "NomadCraft",
+      "Light Source": "Dimmable Eye-Caring LED",
+      "Wireless Charge": "15W Qi-certified",
+      "Color Temp": "3000K - 6500K",
+      "Power Source": "USB-C"
+    }
+  },
+  {
+    "name": "Nomad Insulated Flask",
+    "description": "Double-walled vacuum insulated stainless steel water bottle. Keeps beverages ice-cold for 24 hours or piping hot for 12 hours. Sweat-free powder coat finish.",
+    "price": 2899.00,
+    "category": "Lifestyle",
+    "imageUrl": "/images/products/flask.jpg",
+    "rating": 4.8,
+    "stock": 50,
+    "specifications": {
+      "Brand": "NomadCraft",
+      "Capacity": "32 oz (950ml)",
+      "Material": "18/8 Pro-Grade Stainless Steel",
+      "Insulation": "TempShield Double-Wall",
+      "Lid": "Leakproof Straw Lid"
+    }
+  },
+  {
+    "name": "Apex Active Hoodie",
+    "description": "Premium athletic hoodie engineered from moisture-wicking four-way stretch fabric. Features zip-secure pockets, scuba-style hood, and thumbholes for active warmth.",
+    "price": 5799.00,
+    "category": "Apparel",
+    "imageUrl": "/images/products/hoodie.jpg",
+    "rating": 4.3,
+    "stock": 20,
+    "specifications": {
+      "Brand": "ApexGear",
+      "Material": "88% Polyester, 12% Spandex",
+      "Fit": "Athletic Modern Fit",
+      "Weight": "Medium-weight breathable",
+      "Care": "Machine wash cold"
+    }
+  }
+]

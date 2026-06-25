@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables / Secrets
+.env
+backend/.env
+
+# Local Database Files (optional, keep seeds but ignore dynamic db changes)
+# backend/data/db.json
+
+# Build Directories
+dist/
+build/
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System Files
+.DS_Store
+Thumbs.db
